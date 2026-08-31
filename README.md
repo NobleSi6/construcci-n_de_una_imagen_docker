@@ -20,7 +20,7 @@ personalizada mediante un `Dockerfile`, construir dicha imagen y ejecutar la
 aplicación dentro de un contenedor, mapeando puertos entre el host y el
 contenedor.
 
-## Estructura del proyecto
+## Estructura del_proyecto
 ```
 hello-node/
 ├── Dockerfile
