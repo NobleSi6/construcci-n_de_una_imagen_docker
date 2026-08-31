@@ -1,28 +1,20 @@
 # hello-node 🐳
-
-## Estudiante
-<!-- Coloca aquí tu nombre completo -->
 Elias Milan Lecona Condori
-
-
 ## Descripción de la aplicación
-`hello-node` es una aplicación básica construida con Node.js (sin frameworks
-externos, usando el módulo nativo `http`). Al iniciarse, levanta un servidor
+`ejercicio_cloud_N1` es una aplicación basica construida con Node.js. Al iniciarse, levanta un servidor
 HTTP que escucha en el puerto `3000` y responde a cualquier petición con el
-mensaje:
+mensaje:¡Hola desde Docker y Node.js!
 
 ```
-¡Hola desde Docker y Node.js!
-```
 
-El objetivo del proyecto es practicar la creación de una imagen Docker
-personalizada mediante un `Dockerfile`, construir dicha imagen y ejecutar la
+El objetivo es practicar la creación de una imagen Docker
+mediante un `Dockerfile`, construir dicha imagen y ejecutar la
 aplicación dentro de un contenedor, mapeando puertos entre el host y el
 contenedor.
 
 ## Estructura del_proyecto
 ```
-hello-node/
+ejercicio_cloud_N1/
 ├── Dockerfile
 ├── index.js
 ├── package.json
@@ -38,7 +30,7 @@ docker build -t hello-node:1.0 .
 ## Comando utilizado para ejecutar el contenedor
 ```bash
 docker run -d \
-  --name hello-node-container \
+  --name ejercicio_cloud_N1 \
   -p 8080:3000 \
   hello-node:1.0
 ```
@@ -54,34 +46,17 @@ Listar imágenes creadas:
 ```bash
 docker images
 ```
-
 Listar contenedores en ejecución:
 ```bash
 docker ps
 ```
 
-Ver logs del contenedor:
-```bash
-docker logs hello-node-container
-```
-
-Detener y eliminar el contenedor:
-```bash
-docker stop hello-node-container
-docker rm hello-node-container
-```
-
 ## Capturas de pantalla
 
 ### `docker images`
-<!-- Inserta aquí la captura -->
 ![docker images](docs/docker-images.png)
-
 ### `docker ps`
-<!-- Inserta aquí la captura -->
 ![docker ps](docs/docker-ps.png)
-
 ### Aplicación funcionando en el navegador
-<!-- Inserta aquí la captura -->
 ![app funcionando](docs/app-navegador.png)
-# construcci-n_de_una_imagen_docker
+
